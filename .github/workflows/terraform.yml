@@ -13,5 +13,11 @@ jobs:
          - name: Testing-pytho-shell
            run: print("Hello From Python!!")
            shell: python
-    
+  job-3:
+      runs-on: ubuntu-22.04
+      steps: 
+          - name: Testing-javascript-action
+            uses: actions/hello-world-javascript-action@v2
+            with:
+              who-to-greet: "Mayur"
      
