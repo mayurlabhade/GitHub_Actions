@@ -5,6 +5,13 @@ jobs:
   job-1:
       runs-on: ubuntu-24.04
       steps:
-        - run: echo "Hello World!!"
+        - name: Testing-bash-shell
+          run: echo "Hello From Shell"
+  job-2:
+     runs-on: ubuntu-24.04
+     steps:
+         - name: Testing-pytho-shell
+           run: print("Hello From Python!!")
+           shell: python
     
      
