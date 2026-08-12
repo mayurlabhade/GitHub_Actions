@@ -1,0 +1,14 @@
+name: Testing-Depenndacy-In-GitHub-Actions
+on:
+ workflow_dispatch:
+jobs:
+ buid:
+  runs-on: ubuntu-22.04
+  steps:
+   name: Testing-Hello-From-Bash
+   run: echo "Building"
+ Test:
+  runs-on: ubuntu-22.04
+  steps:
+   name: Testing-Hello-From-Bash
+   run: echo "Testing"
