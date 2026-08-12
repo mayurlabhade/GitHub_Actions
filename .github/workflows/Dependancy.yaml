@@ -5,10 +5,12 @@ jobs:
  buid:
   runs-on: ubuntu-22.04
   steps:
-   name: Testing-Hello-From-Bash
-   run: echo "Building"
+   - name: Testing-Hello-From-Bash-1
+     run: echo "Building"
  Test:
   runs-on: ubuntu-22.04
+  needs:
+   - buid
   steps:
-   name: Testing-Hello-From-Bash
-   run: echo "Testing"
+   - name: Testing-Hello-From-Bash-2
+     run: echo "Testing"
